@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 /**
  * PackageName : studio.thinkground.aroundhub.config.env
@@ -16,6 +17,7 @@ import org.springframework.context.annotation.Profile;
  */
 @Profile("dev")
 @Configuration
+//@Component  // TODO written by hyd 2023.3.18
 public class DevConfiguration implements EnvConfiguration {
 
     private final Logger LOGGER = LoggerFactory.getLogger(DevConfiguration.class);

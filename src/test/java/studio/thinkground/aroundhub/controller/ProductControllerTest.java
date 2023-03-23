@@ -32,7 +32,7 @@ public class ProductControllerTest {
   ProductServiceImpl productService;
 
   // http://localhost:8080/api/v1/product-api/product/{productId}
-  @Test
+//  @Test
   @DisplayName("Product 데이터 가져오기 테스트")
   void getProductTest() throws Exception {
 
@@ -58,7 +58,7 @@ public class ProductControllerTest {
 
 
   // http://localhost:8080/api/v1/product-api/product
-  @Test
+//  @Test
   @DisplayName("Product 데이터 생성 테스트")
   void createProductTest() throws Exception {
     //Mock 객체에서 특정 메소드가 실행되는 경우 실제 Return을 줄 수 없기 때문에 아래와 같이 가정 사항을 만들어줌

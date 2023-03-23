@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   db_master:
-    image: mariadb:10.6 # mariadb 10.6 버전 이미지 사용
+    image: mariadb:10.7 # mariadb 10.6 버전 이미지 사용 -> 10.7로 변경
     container_name: db_master # container 이름 설정
     restart: always
     environment:
@@ -17,7 +17,7 @@ services:
       - "3306:3306" # 이 옵션은 docker engine에게 각 container에게 포트를 수동으로 설정하게 해줍니다.
 
   db_slave:
-    image: mariadb:10.6 # mariadb 10.6 버전 이미지 사용
+    image: mariadb:10.7 # mariadb 10.6 버전 이미지 사용  -> 10.7로 변경
     container_name: db_slave # container 이름 설정
     restart: always
     environment:
